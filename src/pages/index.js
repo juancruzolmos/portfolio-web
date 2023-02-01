@@ -1,16 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Script from 'next/script';
+
 import Link from 'next/link';
 import { useState } from 'react';
 
 /* ICONOS DE REACT */
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from 'react-icons/ai';
 
 /* IMAGENES IMPORTADAS */
 import logoGreen from '../../public/logoGreen.svg';
