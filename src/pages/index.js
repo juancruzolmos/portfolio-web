@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 /* ICONOS DE REACT */
 import { BsFillMoonStarsFill } from 'react-icons/bs';
+import Typing from 'public/typing';
 
 /* IMAGENES IMPORTADAS */
 import logoGreen from '../../public/logoGreen.svg';
@@ -38,7 +39,7 @@ export default function Home() {
           id="top"
           className="bg-fondo1 bg-center bg-auto bg-no-repeat min-h-screen md:bg-fondo2 "
         >
-          <nav className="py-5 px-10 mb-12 flex justify-between bg-cremita">
+          <nav className="py-5 px-10 mb-12 flex justify-between bg-cremita dark:bg-gris-oscuro">
             <Image src={logoGreen} width={75} />
             <ul className="flex items-center">
               <li>
@@ -58,9 +59,12 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="text-center p-10">
+          <div className="text-center p-10 pt-[20vh]">
             <h2 className="text-5xl font-bold font-bolton py-2 text-gris-oscuro md:text-6xl dark:text-cremita">
-              I CAN <span className="text-verde">DESIGN</span>
+              I'm{' '}
+              <span className="text-verde dark:text-naranja">
+                <Typing />
+              </span>
             </h2>
 
             <h3 className=" text-2xl py-2 md:mx-auto md:max-w-lg dark:text-gray-300">
@@ -70,7 +74,7 @@ export default function Home() {
           </div>
           <div className="text-center font-bolton">
             <Link
-              className="bg-naranja p-5 rounded-lg font-medium text-xl text-cremita dark:text-gris-oscuro"
+              className="bg-naranja p-5 rounded-lg font-medium text-xl text-cremita dark:text-gris-oscuro dark:bg-verde"
               href="#"
             >
               Want to work together?
